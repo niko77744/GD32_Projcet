@@ -1,0 +1,148 @@
+./MDK-ARM
+
+# 忽略 Keil MDK-ARM 项目生成的文件
+
+# Object files
+*.o
+*.obj
+
+# Library files
+*.lib
+*.a
+*.d
+
+# Executable files
+*.axf
+*.elf
+*.bin
+*.hex
+
+# Listing files
+*.lst
+
+# Map files
+*.map
+
+# Debug files
+*.pbd
+*.pdsc
+
+# Build output directories
+Build/
+Output/
+
+# Keil project specific files
+*.uvproj
+*.uvopt
+*.uvgui
+*.uvmpw
+*.sct
+*.htm
+*.dep
+
+# Other temporary files
+*.bak
+*.tmp
+
+# Keil-specific IDE files
+*.crf
+*.opt
+*.plg
+
+# Ignore any hidden backup files
+.*.swp
+
+# Keil Clean
+*.rar
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.map
+*.bak
+*.lnp
+*.lst
+*.ini
+*.iex
+*.sct
+*.scvd
+*.uvguix
+*.dbg*
+*.uvguix.*
+.mxproject
+ 
+RTE/
+Templates/
+Examples/
+ 
+!*.uvprojx
+!*.h
+!*.c
+!*.ioc
+!*.axf
+!*.bin
+!*.hex
+
+#JLINK file
+JLinkLog.txt
+*.dbgconf
+
+MDK-ARM/DebugConfig
+MDK-ARM/RTE
+MDK-ARM/UART_IDLE
+*.scvd
+#Keil Project screen layout file
+#!/MDK-ARM/*.uvoptx
+#!/MDK-ARM/*.uvprojx
+
+#JLINK file
+JLinkLog.txt
+
+*.o
+*.hex
+*.d
+*.crf
+*.axf
+*.map
+*.htm
+*.lnp
+*.sct
+*.dep
+*.lst
+*.scvd
+*.iex
+
+*.rar
+*.o
+*.d
+*.crf
+*.htm
+*.dep
+*.map
+*.bak
+*.lnp
+*.lst
+*.ini
+*.iex
+*.sct
+*.scvd
+*.dbg*
+*.uvguix.*
+*Log.*
+
+#忽略.gitignore根目录下的文件夹，根据自己的需要修改
+RTE/
+Templates/
+Examples/
+OBJ/
+
+#不能忽略的文件
+!*.uvprojx
+!*.h
+!*.c
+
+.vscode 
+./vscode
+.history
+*.bin
