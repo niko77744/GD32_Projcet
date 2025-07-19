@@ -21,9 +21,23 @@
 
 typedef enum
 {
+    LED_RED = 0,
+    LED_GREEN,
+    LED_DEVICE_NUM
+} led_color_e;
+
+typedef enum
+{
     LED_OFF = 0, /* LED灭 */
     LED_ON = 1,  /* LED亮 */
-} led_state;
+} led_state_e;
+
+typedef enum
+{
+    LED_MODE_NORMAL = 0, /* 正常模式 */
+    LED_MODE_BLINK,      /* 闪烁模式 */
+    LED_MODE_BREATH,     /* 呼吸模式 */
+} led_mode_e;
 
 typedef struct
 {
@@ -34,30 +48,40 @@ typedef struct
     uint8_t otype;       /* GPIO输出类型 GPIO_OTYPE_PP 推挽  GPIO_OTYPE_OD 开漏 */
     uint32_t ospeed;     /* GPIO输出速度 */
     uint8_t pull;        /* GPIO上下拉配置 */
-    led_state state;     /* LED当前状态, 1灭, 0亮 */
+    led_state_e state;   /* LED当前状态, 1灭, 0亮 */
     uint8_t active_low;  /* 是否为低电平有效, 0高电平有效, 1低电平有效 1是灭 0是亮 */
-} led_base_t;
+} led_cgf_t;
 
 typedef struct led
 {
-    led_base_t led_base;
-    void (*init)(struct led *self);                        /* LED初始化函数, 传入指针, 以便在结构体中调用 */
-    void (*set)(struct led *self, led_state state);        /* 设置LED状态, 1灭, 0亮 */
-    void (*toggle)(struct led *self);                      /* 翻转LED状态 */
-    void (*get_state)(struct led *self, led_state *state); /* 获取LED状态, 1灭, 0亮 */
-} led_t;
+    led_cgf_t led_base;
+    void (*init)(struct led *self);                          /* LED初始化函数, 传入指针, 以便在结构体中调用 */
+    void (*set)(struct led *self, led_state_e state);        /* 设置LED状态, 1灭, 0亮 */
+    void (*toggle)(struct led *self);                        /* 翻转LED状态 */
+    void (*get_state)(struct led *self, led_state_e *state); /* 获取LED状态, 1灭, 0亮 */
+} led_driver_t;
 
 typedef struct
 {
-    led_t led;
-    void (*init)(led_t *p);                        /* LED初始化函数 */
-    void (*set)(led_t *p, led_state state);        /* 设置LED状态, 1灭, 0亮 */
-    void (*toggle)(led_t *p);                      /* 翻转LED状态 */
-    void (*get_state)(led_t *p, led_state *state); /* 获取LED状态, 1灭, 0亮 */
-} child_led_t;
+    led_driver_t led;
+    void (*init)(led_driver_t *p);                          /* LED初始化函数 */
+    void (*set)(led_driver_t *p, led_state_e state);        /* 设置LED状态, 1灭, 0亮 */
+    void (*toggle)(led_driver_t *p);                        /* 翻转LED状态 */
+    void (*get_state)(led_driver_t *p, led_state_e *state); /* 获取LED状态, 1灭, 0亮 */
+} child_led_driver_t;
 
-led_t *register_led_device(child_led_t *p);
-uint8_t delect_led_device(led_t *p);
+typedef struct
+{
+    led_driver_t *led[LED_DEVICE_NUM]; /* LED驱动指针 */
+    led_mode_e mode[LED_DEVICE_NUM];   /* LED模式 */
+} led_app_t;
+
+void led_get_state(led_driver_t *p, led_state_e *state);
+void led_set(led_driver_t *p, led_state_e state);
+void led_toggle(led_driver_t *p);
+void led_init(led_driver_t *p);
+led_driver_t *register_led_device(child_led_driver_t *p);
+uint8_t delect_led_device(led_driver_t *p);
 /******************************************************************************************/
 
 #endif
