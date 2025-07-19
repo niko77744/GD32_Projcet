@@ -152,66 +152,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>61</LineNumber>
+          <LineNumber>57</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220726</Address>
+          <Address>134220622</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\C\GD32\鎱у嫟鏅鸿繙 GD32H757ZMT6 V1.1灏忕郴缁熸澘\Code\User\main.c</Filename>
+          <Filename>D:\C\GD32\鎱у嫟鏅鸿繙 GD32H757ZMT6 V1.1灏忕郴缁熸澘\Code\Drivers\BSP\LED\led.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\GD32H757\../../User/main.c\61</Expression>
+          <Expression>\\GD32H757\../../Drivers/BSP/LED/led.c\57</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
           <LineNumber>54</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134220610</Address>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\C\GD32\鎱у嫟鏅鸿繙 GD32H757ZMT6 V1.1灏忕郴缁熸澘\Code\Drivers\BSP\LED\led.c</Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\..\Drivers\BSP\LED\led.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\GD32H757\../../Drivers/BSP/LED/led.c\54</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>122</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220920</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\C\GD32\鎱у嫟鏅鸿繙 GD32H757ZMT6 V1.1灏忕郴缁熸澘\Code\Drivers\BSP\LED\led.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\GD32H757\../../Drivers/BSP/LED/led.c\122</Expression>
-        </Bp>
-        <Bp>
-          <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>56</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134220708</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\C\GD32\鎱у嫟鏅鸿繙 GD32H757ZMT6 V1.1灏忕郴缁熸澘\Code\User\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\GD32H757\../../User/main.c\56</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
@@ -224,6 +192,16 @@
           <count>1</count>
           <WinNumber>1</WinNumber>
           <ItemText>p_red</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>child</ItemText>
+        </Ww>
+        <Ww>
+          <count>3</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>p</ItemText>
         </Ww>
       </WatchWindow1>
       <Tracepoint>
