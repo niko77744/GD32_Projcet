@@ -33,6 +33,7 @@
 #include "./SYSTEM/delay/delay.h"
 #include "./BSP/LED/led.h"
 #include "./BSP/Button/Button.h"
+#include "./BSP/QSPI/qspi.h"
 
 /**
  * SYS_SUPPORT_OS用于定义系统文件夹是否支持OS

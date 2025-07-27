@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>GD32H7XX</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Drivers\CMSIS;..\..\Drivers\CMSIS\GD\GD32H7xx\Include;..\..\Drivers\GD32H7xx_standard_peripheral\Include;..\..\Drivers;..\..\Middlewares;..\..\User;..\..\Middlewares\MultiButton-master;..\..\Middlewares\EasyLogger\easylogger\inc;..\..\Middlewares\EasyLogger\easylogger\plugins\file;..\..\Middlewares\EasyLogger\easylogger\plugins\flash;..\..\Middlewares\EasyFlash\easyflash\inc</IncludePath>
+              <IncludePath>..\..\Drivers\CMSIS;..\..\Drivers\CMSIS\GD\GD32H7xx\Include;..\..\Drivers\GD32H7xx_standard_peripheral\Include;..\..\Drivers;..\..\Middlewares;..\..\User;..\..\Middlewares\MultiButton-master;..\..\Middlewares\EasyLogger\easylogger\inc;..\..\Middlewares\EasyLogger\easylogger\plugins\file;..\..\Middlewares\EasyLogger\easylogger\plugins\flash;..\..\Middlewares\EasyFlash\easyflash\inc;..\..\Middlewares\SFUD-master\sfud\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -558,6 +558,46 @@
               <FileName>ef_cfg.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\..\Middlewares\EasyFlash\easyflash\inc\ef_cfg.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/SFUD</GroupName>
+          <Files>
+            <File>
+              <FileName>sfud_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\port\sfud_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>sfud.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\src\sfud.c</FilePath>
+            </File>
+            <File>
+              <FileName>sfud_sfdp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\src\sfud_sfdp.c</FilePath>
+            </File>
+            <File>
+              <FileName>sfud.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\inc\sfud.h</FilePath>
+            </File>
+            <File>
+              <FileName>sfud_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\inc\sfud_cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>sfud_def.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\inc\sfud_def.h</FilePath>
+            </File>
+            <File>
+              <FileName>sfud_flash_def.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Middlewares\SFUD-master\sfud\inc\sfud_flash_def.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -858,6 +898,11 @@
               <FileName>Button.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\Drivers\BSP\Button\Button.c</FilePath>
+            </File>
+            <File>
+              <FileName>qspi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\QSPI\qspi.c</FilePath>
             </File>
           </Files>
         </Group>
