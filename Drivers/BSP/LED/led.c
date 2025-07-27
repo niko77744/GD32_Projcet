@@ -12,7 +12,6 @@
  */
 
 #include "./BSP/LED/led.h"
-#include "stdlib.h"
 
 // TIMER22_CH0
 child_led_driver_t red_led = {

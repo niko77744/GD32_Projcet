@@ -14,10 +14,25 @@
 #ifndef __SYS_H
 #define __SYS_H
 
+/***************************** 标准库头文件包含 *****************************/
 #include "gd32h7xx.h"
 #include <stdio.h>
 #include <signal.h>
+#include <stdlib.h>
+#include <math.h>
+#include <string.h>
+#include <stdint.h>
+
+/***************************** MiddleWare文件包含 *****************************/
 #include "elog.h"
+#include "easyflash.h"
+#include "multi_button.h"
+
+/***************************** BSP文件包含 *****************************/
+#include "./SYSTEM/usart/usart.h"
+#include "./SYSTEM/delay/delay.h"
+#include "./BSP/LED/led.h"
+#include "./BSP/Button/Button.h"
 
 /**
  * SYS_SUPPORT_OS用于定义系统文件夹是否支持OS

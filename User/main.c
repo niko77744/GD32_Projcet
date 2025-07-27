@@ -12,11 +12,6 @@
  */
 
 #include "./SYSTEM/sys/sys.h"
-#include "./SYSTEM/usart/usart.h"
-#include "./SYSTEM/delay/delay.h"
-#include "./BSP/LED/led.h"
-#include "./BSP/Button/Button.h"
-#include "elog.h"
 
 int main(void)
 {
@@ -50,6 +45,18 @@ int main(void)
     log_i("2. Double click simulation\n");
     log_i("3. Long press simulation\n");
     log_i("4. Repeat press simulation\n\n");
+
+    //  if (easyflash_init() == EF_NO_ERR)
+    //  {
+    //      char *device_id = ef_get_env("device_id");
+    //      log_i("Device ID: %s\n", device_id);
+    //      ef_set_env("device_id", device_id);
+    //      ef_save_env();
+    //  }
+    //  else
+    //  {
+    //      log_e("EasyFlash initialization failed\n");
+    //  }
 
     while (1)
     {

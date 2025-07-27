@@ -2,7 +2,6 @@
 #define __BUTTON_H__
 
 #include "./SYSTEM/sys/sys.h"
-#include "multi_button.h"
 
 #define BS_GPIO_PORT GPIOC
 #define BS_GPIO_PIN GPIO_PIN_1
