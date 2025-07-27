@@ -14,6 +14,7 @@
 #include "./BSP/LED/led.h"
 #include "stdlib.h"
 
+// TIMER22_CH0
 child_led_driver_t red_led = {
     .led = {
         .led_base = {
@@ -29,7 +30,7 @@ child_led_driver_t red_led = {
         },
     },
 };
-
+// TIMER22_CH1
 child_led_driver_t green_led = {
     .led = {
         .led_base = {
